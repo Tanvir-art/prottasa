@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4fc419c08a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <nav class="navbar px-20 md:px-20 lg:px-32 h-[100px]">
+        <div class="logo">
+            <img class="w-[100px] md:w-[200px] w-[200px]" src="images/output-onlinepngtools.png" alt="">
+            <!-- <h2 class="text-3xl font-bold w-[100px] md:w-[200px] w-[200px]">Hello Logo</h2> -->
+        </div>
+        <div>
+            <ul class="nav-links border-r-2 border-[#006887]" id="navLinks">
+                <li><a href="index.html">Home Care Service</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+                <li><a href="referrels.html"> Referrels</a></li>
+            </ul>
+       </div>
+       <div class="hidden md:hidden lg:block">
+        <span class="text-xs text-[#006887] mr-6 underline underline-offset-8 font-bold">(646) 652-6776</span>
+        <button class="text-xs px-6 py-3 bg-[#006887] text-white rounded  font-bold text-uppercase mr-6">Request Care</button>
+        <button class="text-xs px-6 py-3 bg-[#D4357D] text-white rounded  font-bold text-uppercase">Caeeer</button>
+       </div>
+        <div class="burger z-10" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="refferel px-20 md:px-20 lg:px-32 py-40">
+        <div class="flex">
+            <div class="flex-1">
+                <h2 class="text-2xl md:text-4xl lg:text-5xl text-left font-bold text-white  leading-[35px] md:leading-[40px] lg:leading-[60px]"><span class="bg-[#ffb71b]"> LIVE AT </span> <br>  
+                    HOME SAFELY  </h2>
+                <p class="text-base text-left py-6 text-white ">If you or your loved ones are in need of home care services, Amazing Home Care can provide them with the care and treatment they need.</p>
+            </div>
+            <div class="flex-1">
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="px-20 md:px-20 lg:px-32 py-20">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Get started</h2>
+        
+        <div>
+            <form>
+                <h2 class="text-2xl md:text-3xl lg:text-3xl py-6 font-bold">Patient Information</h2>
+                <div class="flex flex-col md:flex-row lg:flex-row gap-6">
+                    <div class="flex-1">
+                        <div>
+                            <label class="text-base font-bold" for="">First Name</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="text" name="" id="">
+                    </div>
+                    <div class="flex-1">
+                        <div>
+                            <label class="text-base font-bold" for="">Last Name</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="text" name="" id="">
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row lg:flex-row gap-6 py-6">
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-xl font-bold " for="">Gender</label>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div>
+                                <input type="radio" name="" id="">
+                                <label for="male">Male</label><br>
+                            </div>
+    
+                            <div>
+                                <input type="radio" name="" id="">
+                                <label for="female">Female</label><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-xl font-bold" for="">Date Of Birth</label>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-1">
+                                <select class="input input-bordered w-full" name="" id="">
+                                    <option value="">Month</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                </select>
+                            </div>
+
+
+                            <div class="flex-1">
+                                <select class="input input-bordered w-full" name="" id="">
+                                    <option value="">Day</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                </select>
+                            </div>
+
+                            <div class="flex-1"> 
+                                <select class="input input-bordered w-full" name="" id="">
+                                    <option value="">Year</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="py-2">
+                        <label class="text-xl font-bold" for="">Primary Language</label>
+                    </div>
+                    <input class="input input-bordered w-full" type="text">
+                </div>
+
+                <div class="py-6">
+                    <div class="py-2">
+                        <label class="text-xl font-bold" for="">Address</label>
+                    </div>
+                    <input class="input input-bordered w-full" type="text">
+                </div>
+                <div class="">
+                    <div class="py-2">
+                        <label class="text-xl font-bold" for="">Street Address</label>
+                    </div>
+                    <input class="input input-bordered w-full" type="text">
+                </div>
+
+                <div class="py-6">
+                    <div class="py-2">
+                        <label class="text-xl font-bold" for="">Address Line 2</label>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row lg:flex-row gap-6">
+
+                        <div class="flex-1">
+                        
+                            <input class="input input-bordered w-full" type="text" name="" id="">
+                        </div>
+                        <div class="flex-1">
+                        
+                            <input class="input input-bordered w-full" type="text" name="" id="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row lg:flex-row gap-6">
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-base font-bold" for="">City</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="text" name="" id="">
+                    </div>
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-base font-bold" for="">State / Province / Region</label>
+                        </div>
+                        <select class="input input-bordered w-full" name="" id="">
+                            <option value="">United State</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row lg:flex-row gap-6 py-6">
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-base font-bold" for="">Telephone</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="tel" name="" id="">
+                    </div>
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-base font-bold" for="">Alternate Telephone</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="tel" name="" id="">
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">Insurance Info</h2>
+
+                    <div>
+                        <div class="py-2">
+                            <label class="text-base font-bold" for="">Medicaid ID Number</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="tel" name="" id="">
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div>
+                    <h2 class="text-2xl md:text-3xl lg:text-3xl py-6 font-bold">Emergency Contact</h2>
+                <div class="flex flex-col md:flex-row lg:flex-row gap-6">
+                    <div class="flex-1">
+                        <div>
+                            <label class="text-base font-bold" for="">First Name</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="text" name="" id="">
+                    </div>
+                    <div class="flex-1">
+                        <div>
+                            <label class="text-base font-bold" for="">Last Name</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="text" name="" id="">
+                    </div>
+                    <div class="flex-1">
+                        <div>
+                            <label class="text-base font-bold" for="">Relationship</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="text" name="" id="">
+                    </div>
+                </div>
+
+                
+                <div class="">
+                    <div class="py-2">
+                        <label class="text-xl font-bold" for="">Street Address</label>
+                    </div>
+                    <input class="input input-bordered w-full" type="text">
+                </div>
+
+                <div class="py-6">
+                    <div class="py-2">
+                        <label class="text-xl font-bold" for="">Address Line 2</label>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row lg:flex-row gap-6">
+
+                        <div class="flex-1">
+                        
+                            <input class="input input-bordered w-full" type="text" name="" id="">
+                        </div>
+                        <div class="flex-1">
+                        
+                            <input class="input input-bordered w-full" type="text" name="" id="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row lg:flex-row gap-6">
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-base font-bold" for="">City</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="text" name="" id="">
+                    </div>
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-base font-bold" for="">State / Province / Region</label>
+                        </div>
+                        <select class="input input-bordered w-full" name="" id="">
+                            <option value="">United State</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row lg:flex-row gap-6 py-6">
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-base font-bold" for="">Telephone</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="tel" name="" id="">
+                    </div>
+                    <div class="flex-1">
+                        <div class="py-2">
+                            <label class="text-base font-bold" for="">Alternate Telephone</label>
+                        </div>
+                        <input class="input input-bordered w-full" type="tel" name="" id="">
+                    </div>
+                </div>
+                </div>
+
+                <div class="flex justify-center py-4">
+                    <button class="text-2xl font-bold border-2 px-10 py-3 border-black">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <script src="js/contact.js"></script>
+</body>
+</html>

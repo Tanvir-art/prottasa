@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4fc419c08a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <nav class="navbar px-20 md:px-20 lg:px-32 h-[100px]">
+        <div class="logo">
+            <img class="w-[100px] md:w-[200px] w-[200px]" src="images/output-onlinepngtools.png" alt="">
+            <!-- <h2 class="text-3xl font-bold w-[100px] md:w-[200px] w-[200px]">Hello Logo</h2> -->
+        </div>
+        <div>
+            <ul class="nav-links border-r-2 border-[#006887]" id="navLinks">
+                <li><a href="index.html">Home Care Service</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+                <li><a href="referrels.html"> Referrels</a></li>
+            </ul>
+       </div>
+       <div class="hidden md:hidden lg:block">
+        <span class="text-xs text-[#006887] mr-6 underline underline-offset-8 font-bold">(646) 652-6776</span>
+        <button class="text-xs px-6 py-3 bg-[#006887] text-white rounded  font-bold text-uppercase mr-6">Request Care</button>
+        <button class="text-xs px-6 py-3 bg-[#D4357D] text-white rounded  font-bold text-uppercase">Caeeer</button>
+       </div>
+        <div class="burger z-10" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="contact px-20 md:px-20 lg:px-32 py-40">
+        <div class="flex">
+            <div class="flex-1">
+                <h2 class="text-5xl text-left font-bold text-[#410099] leading-[55px]">GET<span class="bg-[#ffb71b] ml-3"> AMAZING  </span> <br>  CARE </h2>
+                <p class="text-base text-left py-6 text-black ">Stay in the comfort of your own home.</p>
+            </div>
+            <div class="flex-1">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-20 lg:px-32">
+        <div class="flex flex-col-reverse md:flex-row lg:flex-row flex-between shadow-xl">
+            <div class="pr-40 bg-[#F7F7F7] px-20 md:px-10 lg:px-20 py-10">
+                <div>
+                    <h2 class="text-4xl font-bold py-4">Location</h2>
+                    <p class="text-xl"> 1601 Bronxdale Ave. <br>
+                        Suite 207 <br>
+                        Bronx, NY 10462</p>
+                </div>
+
+                <div class="py-6">
+                    <h2 class="text-4xl font-bold py-3">Phone</h2>
+                    <p> <span class="font-bold text-xl">E:</span> info@amazinghc.com</p>
+                    <p class="py-1"> <span class="font-bold text-xl">P:</span> 718 863 3300</p>
+                    <p> <span class="font-bold text-xl">F:</span> 718 863 4300</p>
+                </div>
+
+                <div>
+                    <h2 class="text-4xl font-bold pb-4">Connect</h2>
+                    <div class="flex flex-col gap-2">
+                        <a class="text-xl" href=""><i class="fa-brands fa-linkedin text-2xl"></i></i> <span class="ml-2">Linkedin</span></a> 
+                        <a class="text-xl" href=""><i class="fa-brands fa-instagram text-2xl"></i><span class="ml-2">Instagram</span></a> 
+                        <a class="text-xl" href=""><i class="fa-brands fa-facebook text-2xl"></i> <span class="ml-2">Facebook</span></a> 
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="flex-1 px-20 bg-base-100 ">
+                <div class="flex justify-center py-6">
+                    <div class="tabs tabs-boxed w-64 h-20 flex justify-center items-center">
+                        <div>
+                            <a class="tab text-xl tab-active" id="patientid">Patient</a> 
+                            <a class="tab text-xl" id="careid">Caregivers</a> 
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold pt-6">Lets Talk</h2>
+                    <p class="py-6">Questions about Amazing Home Care? Fill out the form, and one of our representatives will help you get started.</p>
+                </div>
+
+                <div id="patient">
+                    <div class="flex gap-4">
+                        <input class="input input-bordered w-1/2" type="text" placeholder="Name">
+                        <input class="input input-bordered w-1/2"  type="email" name="" id="" placeholder="Email">
+                    </div>
+
+                    <div class="py-6">
+                        <input class="input input-bordered w-full"  type="tel" name="" id="" placeholder="Phone">
+                    </div>
+                    <div>
+                        <textarea class="input input-bordered w-full h-20" id="txtid" name="txtname" rows="20" cols="50" maxlength="200">
+
+                            </textarea>
+                    </div>
+                    <div class="flex justify-center py-4">
+                        <button class="text-2xl font-bold border-2 px-7 py-3 border-black">Submit</button>
+                    </div>
+                </div>
+
+                <div id="caregiver" class="hidden">
+                    <div class="flex gap-4">
+
+                        <div>
+                            <input class="input input-bordered w-1/2" type="text" placeholder="First Name">
+                        </div>
+
+                        <input class="input input-bordered w-1/2"  type="text" name="" id="" placeholder="Last Name">
+                    </div>
+
+                    <div class="py-6">
+                        <input class="input input-bordered w-full"  type="tel" name="" id="" placeholder="Phone">
+                    </div>
+
+                    <div class="pb-6">
+                        <input class="input input-bordered w-full"  type="email" name="" id="" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <select class="input input-bordered w-full" name="cars" id="cars">
+                            <option value="volvo">Location</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                          </select>
+                    </div>
+                    <div class="flex justify-center py-4">
+                        <button class="text-2xl font-bold border-2 px-7 py-3 border-black">Submit</button>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#592f56]  px-10 md:px-20 lg:px-32">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-4">
+            <div>
+                <img class="w-[200px] h-[120px]" src="images/output-onlinepngtools.png"">
+                <p class="text-white text-base font-thin pr-6">For over 15 years our focus on elevating the homecare experience has allowed our clients to receive all levels of medical care from the comfort of home, while providing peace of mind to clients and their loved ones.</p>
+            </div>
+
+            <div>
+                <h2 class="text-white text-2xl font-bold mb-4">HOME CARE</h2>
+                <ul class="text-white">
+                    <li>Private Duty Nursing</li>
+                    <li>Home Health Aides</li>
+                    <li>Chronic Care</li>
+                    <li>Senior Care</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-white text-2xl font-bold mb-4">COMPANY</h2>
+                <ul class="text-white">
+                    <li>Private Duty Nursing</li>
+                    <li>Home Health Aides</li>
+                    <li>Chronic Care</li>
+                    <li>Senior Care</li>
+                </ul>
+            </div>
+
+            <div>
+                <div>
+                    <button class="px-6 py-3 bg-[#82457e] text-white rounded  font-bold text-uppercase mr-4">Caeeer</button>
+                    <button class="px-6 py-3  text-white rounded border-2 font-bold text-uppercase">(646) 652-6776</button>
+               </div>
+
+               <div class="mt-4 flex gap-4">
+                <div>
+                    <i class="fa-brands fa-facebook bg-[#6a4467] p-4 text-[21px] text-white mr-2"></i>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-instagram bg-[#6a4467] p-4 text-[21px] text-white mr-2"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-linkedin bg-[#6a4467] p-4 text-[21px] text-white mr-2"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-youtube bg-[#6a4467] p-4 text-[21px] text-white mr-2"></i>
+                </div>
+               </div>
+
+            </div>
+        </div>
+      </footer>
+    <script src="js/contact.js"></script>
+</body>
+</html>

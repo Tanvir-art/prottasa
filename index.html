@@ -8,29 +8,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/4fc419c08a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    <nav class="navbar px-20 md:px-20 lg:px-32">
+
+    <nav class="navbar px-20 md:px-20 lg:px-32 h-[100px]">
         <div class="logo">
             <img class="w-[100px] md:w-[200px] w-[200px]" src="images/output-onlinepngtools.png" alt="">
+            <!-- <h2 class="text-3xl font-bold w-[100px] md:w-[200px] w-[200px]">Hello Logo</h2> -->
         </div>
         <div>
             <ul class="nav-links border-r-2 border-[#006887]" id="navLinks">
                 <li><a href="index.html">Home Care Service</a></li>
-                <li><a href="about.html"> Testimonials</a></li>
-                <li><a href="service.html">FAQs</a></li>
-                <li><a href="contact.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+                <li><a href="referrels.html"> Referrels</a></li>
             </ul>
        </div>
-       <div class="hidden lg:block">
-        <span class="text-xl text-[#006887] mr-10 number font-bold">(646) 652-6776</span>
-        <button class="px-6 py-3 bg-[#006887] text-white rounded  font-bold text-uppercase mr-10">Request Care</button>
-        <button class="px-6 py-3 bg-[#D4357D] text-white rounded  font-bold text-uppercase">Caeeer</button>
+       <div class="hidden md:hidden lg:block">
+        <span class="text-xs text-[#006887] mr-6 underline underline-offset-8 font-bold">(646) 652-6776</span>
+        <button class="text-xs px-6 py-3 bg-[#006887] text-white rounded  font-bold text-uppercase mr-6">Request Care</button>
+        <button class="text-xs px-6 py-3 bg-[#D4357D] text-white rounded  font-bold text-uppercase">Caeeer</button>
        </div>
-        <div class="burger" id="burger">
+        <div class="burger z-10" id="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -38,13 +41,13 @@
     </nav>
 
     <section class="px-20 md:px-20 lg:px-32 backgroundHero">
-        <div class="flex flex-col md:flex-row lg:flex-row justify-between items-center">
+        <div class="flex flex-col md:flex-row lg:flex-row justify-evenly items-center">
             <div>
                 <h2 class="text-3xl md:text-4xl lg:text-5xl leading-[30px] md:leading-[60px] lg:leading-[60px]">Caring for your family <br> <span class="font-bold"> like they’re our own. </span></h2>
                 <p class="text-xl py-6">New York’s premier long-term home health care agency.</p>
                 <div class="flex items-center mb-4 mr-2 md:mr-6 lg:mr-0">
                     <button class="px-6 py-3 bg-[#006887] text-white rounded  font-bold mr-10 text-uppercase">Request Care</button>
-                    <p class="bg-[#fef4e9] py-3 px-6 text-base">Or give us a call: <span class="text-base md:text-base lg:text-lg text-[#006887] mr-10 number  font-medium md:font-medium lg:font-bold ml-3">(646) 652-6776</span> </p>
+                    <p class="bg-[#fef4e9] py-3 px-6 text-base">Or give us a call: <span class="text-base md:text-base lg:text-lg text-[#006887] mr-4 underline underline-offset-8  font-medium md:font-medium lg:font-bold ml-3">(646) 652-6776</span> </p>
                 </div>
                 <!-- <div class="flex justify-center items-center gap-4 mt-10">
                     <div>
@@ -189,7 +192,7 @@
   
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
   
-          <div class="whatudo">
+          <!-- <div class="whatudo">
             <img class="object-cover w-full" src="images/card-tall-private-duty-nursing-care.jpg" alt="">
             <div class="relative bottom-24">
               <h2 class="text-xl font-bold text-center text-white privateDuty">Private Duty Nursing Care</h2>
@@ -197,31 +200,53 @@
               <button class="whatButton text-white text-xl">Learn More</button>
               </div>
             </div>
-          </div>
-  
-          <div class="whatudo">
-            <img class="object-cover w-full" src="images/card-tall-home-health-aide.jpg" alt="">
-            <div class="relative bottom-24">
-              <h2 class="text-xl font-bold text-center text-white privateDuty">Private Duty Nursing Care</h2>
-              <div class="flex justify-center">
-              <button class="whatButton text-white text-xl">Learn More</button>
-              </div>
+          </div> -->
+
+          <div class="overlay-container whatudo">
+             <img class="object-cover w-full" src="images/card-tall-private-duty-nursing-care.jpg" alt="Your Image" class="overlay-image">
+                <div class="overlay-text">
+                    <h2 class="text-xl font-bold text-center text-white privateDuty">Private Duty Nursing Care</h2>
+                    <div class="flex justify-center">
+                        <button class="whatButton text-white text-xl">Learn More</button>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="overlay-container whatudoone">
+                <img class="object-cover w-full" src="images/card-tall-home-health-aide.jpg" alt="Your Image" class="overlay-image">
+                   <div class="overlay-textone">
+                       <h2 class="text-xl font-bold text-center text-white privateDuty">Private Duty Nursing Care</h2>
+                       <div class="flex justify-center">
+                           <button class="whatButton text-white text-xl">Learn More</button>
+                       </div>
+                   </div>
+               </div>
+
+
+               <div class="overlay-container whatudotwo">
+                <img class="object-cover w-full" src="images/card-tall-senior-home-care.jpg" alt="Your Image" class="overlay-image">
+                   <div class="overlay-texttwo">
+                       <h2 class="text-xl font-bold text-center text-white privateDuty">Private Duty Nursing Care</h2>
+                       <div class="flex justify-center">
+                           <button class="whatButton text-white text-xl">Learn More</button>
+                       </div>
+                   </div>
+               </div>
+
+
+               <div class="overlay-container whatudothree">
+                <img class="object-cover w-full" src="images/card-tall-pediatric-care.jpg" alt="Your Image" class="overlay-image">
+                   <div class="overlay-textthree">
+                       <h2 class="text-xl font-bold text-center text-white">Private Duty Nursing Care</h2>
+                       <div class="flex justify-center">
+                           <button class="whatButton text-white text-xl">Learn More</button>
+                       </div>
+                   </div>
+               </div>
+ 
   
   
-          <div class="whatudo">
-            <img class="object-cover w-full" src="images/card-tall-senior-home-care.jpg" alt="">
-            <div class="relative bottom-24">
-              <h2 class="text-xl font-bold text-center text-white privateDuty">Private Duty Nursing Care</h2>
-              <div class="flex justify-center">
-              <button class="whatButton text-white text-xl">Learn More</button>
-              </div>
-            </div>
-          </div>
-  
-  
-          <div class="whatudo">
+          <!-- <div class="whatudo">
             <img class="object-cover w-full" src="images/card-tall-pediatric-care.jpg" alt="">
             <div class="relative bottom-24">
               <h2 class="text-xl font-bold text-center text-white privateDuty">Private Duty Nursing Care</h2>
@@ -230,7 +255,7 @@
               </div>
             </div>
           </div>
-  
+   -->
       
   
   
@@ -238,8 +263,8 @@
         
       </section>
 
-      <section class="bg-[#006887] py-20 px-32">
-        <div class="flex justify-between flex-col md:flex-row lg:flex-row gap-4 items-center">
+      <section class="bg-[#006887] py-20 px-10 md:px-20 lg:px-32">
+        <div class="flex justify-between flex-col md:flex-row lg:flex-row gap-4 items-center newyorkText">
             <div class="">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl text-white">New York’s most trusted <br>
                     home care provider.</h2>
